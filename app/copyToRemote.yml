@@ -1,0 +1,9 @@
+---
+- name: This is a hello-next example
+  hosts:  dckr-trgt-1
+  tasks:
+    - name: Copy file from local  '/tmp/testnext.txt' to remote  '/trgtjar/gnmn.txt'.
+      copy:
+        src: /tmp/demo-0.0.1-SNAPSHOT.jar
+        dest: /trgtjar/demo-0.0.1-SNAPSHOT.jar
+        force: yes

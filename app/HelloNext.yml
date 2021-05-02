@@ -1,0 +1,9 @@
+---
+- name: This is a hello-next example
+  hosts:  dckr-src-1
+  tasks:
+    - name: Copy file from remote file  '/srcjar/abc.txt' to local '/tmp/testnext.txt'.
+      fetch:
+        src: /srcjar/abc.txt
+        dest: /tmp/testnext.txt
+        flat: yes
