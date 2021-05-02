@@ -1,0 +1,11 @@
+[Unit]
+Description=<description about this service>
+
+[Service]
+User=root
+WorkingDirectory= /trgtjar
+ExecStart=java -jar demo-0.0.1-SNAPSHOT.jar
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

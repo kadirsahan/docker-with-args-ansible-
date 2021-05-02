@@ -47,6 +47,11 @@ docker cp  .cert/id_rsa.pub adac1fbb050d:/root/.ssh/id_rsa.pub
 docker cp  .cert/known_hosts adac1fbb050d:/root/.ssh/known_hosts
 
 
-docker commit e3ce7b5acdbc  docker-with-args:v4
+docker commit 7949c7fbd289  docker-with-args:v5
 
-docker run -d  -e slp=10 docker-with-args:v4
+docker run -d  -e slp=10 docker-with-args:v5
+
+
+https://www.shubhamdipt.com/blog/how-to-create-a-systemd-service-in-linux/
+
+
