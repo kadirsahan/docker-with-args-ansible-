@@ -52,6 +52,11 @@ docker commit 7949c7fbd289  docker-with-args:v5
 docker run -d  -e slp=10 docker-with-args:v5
 
 
+docker tag docker-with-args:v5  kadirsahan/masdeploy:v1
+
+
+docker run -d  kadirsahan/masdeploy:v1
+
 https://www.shubhamdipt.com/blog/how-to-create-a-systemd-service-in-linux/
 
 
